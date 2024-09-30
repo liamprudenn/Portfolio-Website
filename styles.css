@@ -1,0 +1,141 @@
+@charset "UTF-8";
+/* CSS Document */
+body, html {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #000000, #333333, #777777);
+}
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Playfair Display', serif;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+#wrapper {
+    flex: 1;
+}
+
+#banner {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#banner ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+#banner li {
+    margin: 0 15px;
+}
+
+#banner a {
+    display: block;
+    height: 38px;
+    padding: 0 30px;
+    color: white;
+}
+
+#banner li:hover {
+    text-decoration: underline;
+    color: #FFF5B5;
+}
+
+#logo {
+    position: relative;
+}
+
+#logo a {
+    font-weight: bold;
+    font-size: 24px;
+    color: #FFF5B5;
+}
+
+/* Apply Flexbox to the main content area */
+main {
+    display: flex;
+}
+
+/* Left and Right Columns */
+#left-column, #right-column {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Left Column */
+#left-column {
+    flex: 2 1 0%;           
+    box-sizing: border-box;
+    /* Remove background-color so it inherits the gradient */
+    color: white;
+    padding: 20px;
+    align-items: center;
+}
+
+/* Right Column */
+#right-column {
+    flex: 1 1 0%;    
+    padding: 50px;
+    box-sizing: border-box;
+    color: white;
+    align-items: center; 
+    justify-content: center; 
+    margin-top: 80px;
+}
+#right-column img {
+    width: 400px; 
+    height: 400px;
+    border-radius: 50%; 
+}
+
+#intro {
+    margin-top: 150px;
+    color: #FFF5B5;
+}
+
+#intro h5 {
+    color: white;
+}
+
+#button button {
+    background-color: #FFF5B5;
+    color: #323133;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#button button:hover {
+    background-color: #323133;
+    color: #FFF5B5;
+}
+
+/* Footer */
+#footer {
+    position: relative;
+    width: 100%;
+    background: black; /* Separate black background for footer */
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
