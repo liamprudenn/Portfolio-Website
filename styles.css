@@ -86,7 +86,6 @@ main {
 #left-column {
     flex: 2 1 0%;           
     box-sizing: border-box;
-    /* Remove background-color so it inherits the gradient */
     color: white;
     padding: 20px;
     align-items: center;
@@ -130,11 +129,69 @@ main {
     color: #FFF5B5;
 }
 
-/* Footer */
+/* About Me Page Styling */
+#about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px; 
+    color: white;
+    text-align: center;
+}
+
+/* Introduction Section */
+#aboutme-intro {
+    max-width: 68%;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+#aboutme-intro h1 {
+    margin-bottom: 35px;
+    color: #FFF5B5; 
+    font-size: 35px;
+}
+
+#aboutme-intro p {
+    font-size: 18px;
+}
+
+#profile-photo {
+    width: 350px;
+    height: 350px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, .6);
+}
+
+#aboutme-details {
+    max-width: 100%;
+    padding: 20px;
+    text-align: left;
+}
+
+#aboutme-details h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #FFF5B5;
+}
+
+#aboutme-details p {
+    margin-bottom: 20px;
+}
+
+#aboutme-details ul li {
+    margin-bottom: 12px;
+}
+#aboutme-video{
+    border: 5px solid #FFF5B5; /* Change the color and thickness as needed */
+    border-radius: 8px;
+    box-shadow: 0px 5px 11px rgba(0, 0, 0, 1.45);
+}
+
+
 #footer {
     position: relative;
     width: 100%;
-    background: black; /* Separate black background for footer */
+    background: black; 
     color: white;
     padding: 1em;
     text-align: center;
