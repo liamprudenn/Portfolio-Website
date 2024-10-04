@@ -3,27 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>About Me</title>
+    <!-- Link to external CSS stylesheets -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="tablet.css">
+    <link rel="stylesheet" href="phone.css">
+    <!-- Link to Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <!-- Wrapper for all content -->
     <div id="wrapper">
         
-        <!-- Navigation Bar (reusing the same structure from index.html) -->
-        <nav id="banner">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li id="logo"><a href="#">LP</a></li>
-                <li><a href="project.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <!-- Navigation Bar -->
+        <header>
+            <!-- Navigation Bar -->
+            <nav id="banner">
+                <ul>
+                    <li><a href="index.html">Home</a></li> <!-- Home link -->
+                    <li><a href="about.html">About</a></li> <!-- About link -->
+                    <li id="logo"><a href="#">LP</a></li> <!-- Logo in the center -->
+                    <li><a href="projects.html">Projects</a></li> <!-- Projects link -->
+                    <li><a href="contact.html">Contact</a></li> <!-- Contact link -->
+                </ul>
+            </nav>
+        </header>
 
-        <!-- Main content area -->
-        <main id="about-me">
+        <!-- Main content area-->
+        <div id="about-me">
+            <!-- Introduction section -->
             <div id="aboutme-intro">
                 <h1>About Me</h1>
                 <p>Hi, I'm Liam Pruden, a hard working student studying Networking & I.T Security @ Ontario Tech University. I have a deep interest in technology and security, and look forward to learning new skills that help me expand my knowledge in the field.</p>
@@ -31,14 +41,14 @@
 
             <!-- Profile Image -->
             <div id="aboutme-image">
-                <img src="images/IMG_4430 2.png" alt="Liam Pruden" id="profile-photo">
+                <img src="images/IMG_44302.png" alt="Liam Pruden" id="profile-photo">
             </div>
 
             <!-- Additional content like skills, experience, or interests -->
             <div id="aboutme-details">
                 <h2>My Journey</h2>
                 <p>
-                    Throughout my journey of learning I.T Secuirty I have completed various projects involving Cryptography, General Python Programs, and projects revolving aorund the history of I.T.
+                    Throughout my journey of learning I.T Security, I have completed various projects involving Cryptography, general Python programs, and projects revolving around the history of I.T.
                 </p>
                 <h2>Skills & Interests</h2>
                 <ul>
@@ -49,6 +59,7 @@
                 </ul>
             </div>
 
+            <!-- Video section -->
             <div id="aboutme-video">
                 <h2>My Story</h2>
                 <video controls width="640" height="360">
@@ -56,6 +67,7 @@
                     Your browser does not support the video tag.
                 </video>
             </div>
+        </div>
     </div> 
 
     <!-- Footer -->

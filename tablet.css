@@ -1,0 +1,119 @@
+/* Media query for screens with a maximum width of 768px */
+@media only screen and (max-width: 768px) {
+
+    /* Remove top margin for the projects page */
+    #projects-page {
+        margin-top: 0;
+    }
+
+    /* Adjust padding and margin for about me section */
+    #about-me {
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    /* Make the banner full width, center its content, and add border */
+    #banner {
+        width: 100%;
+        text-align: center;
+        position: relative;
+        border: 3px solid #FFF5B5;
+    }
+
+    /* Reduce font size for banner links */
+    #banner a {
+        font-size: 1.2rem;
+    }
+
+    /* Remove bottom margin for multiple sections */
+    #index-intro, #aboutme-intro, #projects-page, #contact-container {
+        margin-bottom: 0;
+    }
+
+    /* Remove margin and padding for main content */
+    main {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Remove top margin and set text color for intro section */
+    #index-intro {
+        margin-top: 0;
+        color: #FFF5B5;
+        justify-content: center;
+    }
+
+    /* Adjust font size for main heading */
+    #index-intro h2 {
+        font-size: 62px;
+    }
+
+    /* Set maximum width and circular shape for images */
+    #index-right-column img {
+        max-width: 90%;
+        border-radius: 50%;
+    }
+
+    /* Adjust button size and background color */
+    #index-button button {
+        font-size: 20px;
+        padding: 5px 10px;
+        background-color: #FFF5B5;
+    }
+
+    /* Increase top margin for about me section */
+    #about-me {
+        margin-top: 30px;
+    }
+
+    /* Adjust padding for intro section of about me */
+    #aboutme-intro {
+        padding: 20px;
+    }
+
+    /* Set font size for headings and margins */
+    #aboutme-intro h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    /* Adjust paragraph font size */
+    #aboutme-intro p {
+        font-size: 18px;
+    }
+
+    /* Center content in details section */
+    #aboutme-details {
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Set font size and margin for project page headings */
+    #projects-page h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    /* Adjust margins and padding for project boxes */
+    .projectbox {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    /* Set width, margins, and padding for contact container */
+
+    /* Adjust font size, padding, and margins for form inputs */
+    form input, form textarea {
+        font-size: 18px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    /* Set margin, padding, and positioning for footer */
+    #footer {
+        margin: 0;
+        padding: 20px;
+        position: relative;
+        overflow: hidden;
+    }
+}

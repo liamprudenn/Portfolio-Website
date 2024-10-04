@@ -1,198 +1,297 @@
 @charset "UTF-8";
-/* CSS Document */
+
+/* Set defult margins and paddings, set a gradint background, and hide horizontal overflow */
 body, html {
     margin: 0;
     padding: 0;
     background: linear-gradient(135deg, #000000, #333333, #777777);
+    overflow-x: hidden;
 }
+
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* enables smooth scrolling*/
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none; /* Removes underline from all links */
 }
 
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    font-family: 'Playfair Display', serif;
-}
-
-body.no-scroll {
-    overflow: hidden;
+    min-height: 100vh; /* Ensures the body takes at least the full viewport height */
+    font-family: 'Playfair Display', serif; /* Sets the default font */
 }
 
 #wrapper {
-    flex: 1;
+    flex: 1; /* Allows the wrapper to grow and fill available space */
 }
 
+/* Navigation Bar */
 #banner {
     width: 100%;
-    height: 80px;
-    position: fixed;
+    position: fixed; /* Keeps the navbar fixed at the top */
     display: flex;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
 }
 
 #banner ul {
-    list-style: none;
+    list-style: none; /* Removes default list styling */
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+    width: 100%;
     margin: 0;
     padding: 0;
-}
-
-#banner li {
-    margin: 0 15px;
 }
 
 #banner a {
     display: block;
     height: 38px;
-    padding: 0 31px;
+    padding: 0 31px; /* Adds horizontal padding to nav links */
     color: white;
 }
 
 #banner li:hover {
-    text-decoration: underline;
-    color: #FFF5B5;
-}
-
-#logo {
-    position: relative;
+    text-decoration: underline; /* Underlines link on hover */
+    color: #FFF5B5; /* Changes link color on hover */
 }
 
 #logo a {
     font-weight: bold;
-    font-size: 24px;
-    color: #FFF5B5;
+    font-size: 1.5em; /* Increases logo font size */
+    padding: 0.5em 1em;
+    color: #FFF5B5; /* Sets logo color */
+    text-transform: uppercase; /* Uppercases logo text */
 }
 
-/* Apply Flexbox to the main content area */
+/* Layout for main content */
 main {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* gives space between columns */
 }
 
-/* Left and Right Columns */
-#left-column, #right-column {
+#index-left-column, #index-right-column {
+    flex: 1 1 48%; /* Flexible width for columns */
     padding: 20px;
     box-sizing: border-box;
 }
 
-/* Left Column */
-#left-column {
-    flex: 2 1 0%;           
-    box-sizing: border-box;
+#index-left-column {
+    flex: 2 1 0%; /* Makes the left column take up more space */
     color: white;
-    padding: 20px;
     align-items: center;
 }
 
-/* Right Column */
-#right-column {
-    flex: 1 1 0%;    
+#index-right-column {
+    flex: 1 1 0%; /* Right column settings */
     padding: 50px;
-    box-sizing: border-box;
-    color: white;
-    align-items: center; 
-    justify-content: center; 
-    margin-top: 80px;
-}
-#right-column img {
-    width: 400px; 
-    height: 400px;
-    border-radius: 50%; 
-}
-
-#intro {
-    margin-top: 150px;
-    color: #FFF5B5;
-}
-
-#intro h5 {
+    margin-top: 80px; /* no overflow with fixed navbar */
     color: white;
 }
 
-#button button {
-    background-color: #FFF5B5;
-    color: #323133;
+#index-right-column img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%; /* Makes the image circular */
+}
+
+#index-intro {
+    margin-top: 150px; /* Adds top margin for spacing (no overflow from nav) */
+    color: #FFF5B5; /* Sets intro text color */
+}
+
+#index-intro h5 {
+    color: white; /* Sets subtitle color */
+}
+
+#index-intro h2 {
+    font-size: 86px; /* Large main heading */
+}
+
+#index-button button {
+    font-size: 1em;
+    padding: 1em 2em;
+    background: conic-gradient(from 0deg, #FFF5B5, #333333, #FFF5B5); /* Angular gradient for button */
+    color: #323133; 
     border: none;
-    padding: 10px 20px;
-    cursor: pointer;
+    cursor: pointer; /* Pointer cursor on hover */
 }
 
-#button button:hover {
-    background-color: #323133;
-    color: #FFF5B5;
+#index-button button:hover {
+    background: conic-gradient(from 0deg, #333333, #FFF5B5, #333333); /* Darker angular gradient on hover */
+    color: #FFF5B5; /* Changes text color on hover */
 }
 
-/* About Me Page Styling */
+
+/* About Me Section */
 #about-me {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 120px; 
+    padding-top: 120px; /* Adds top padding for spacing */
     color: white;
     text-align: center;
 }
 
-/* Introduction Section */
 #aboutme-intro {
-    max-width: 68%;
+    width: 100%;
+    max-width: 68%; /* Limits width for better readability */
     padding: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 40px; /* Adds bottom margin */
 }
 
 #aboutme-intro h1 {
     margin-bottom: 35px;
-    color: #FFF5B5; 
+    color: #FFF5B5; /* Sets heading color */
     font-size: 35px;
 }
 
 #aboutme-intro p {
-    font-size: 18px;
+    font-size: 18px; /* Sets paragraph font size */
 }
 
 #profile-photo {
-    width: 350px;
-    height: 350px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, .6);
+    width: 30%; /* Sets profile photo width */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6); /* Adds shadow to the photo */
 }
 
 #aboutme-details {
-    max-width: 100%;
+    max-width: 68%;
     padding: 20px;
     text-align: left;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 #aboutme-details h2 {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: #FFF5B5;
+    margin: 20px 0; /* Adds vertical spacing */
+    color: #FFF5B5; /* Sets subheading color */
 }
 
 #aboutme-details p {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Adds spacing between paragraphs */
 }
 
 #aboutme-details ul li {
-    margin-bottom: 12px;
-}
-#aboutme-video{
-    border: 5px solid #FFF5B5; /* Change the color and thickness as needed */
-    border-radius: 8px;
-    box-shadow: 0px 5px 11px rgba(0, 0, 0, 1.45);
+    margin-bottom: 12px; /* Adds spacing between list items */
 }
 
+#aboutme-video {
+    width: 100%;
+    max-width: 800px; /* Limits video width */
+    border: 5px solid #FFF5B5; /* Adds border around the video */
+    box-shadow: 0px 5px 11px rgba(0, 0, 0, 1.45); /* Adds shadow to the video container */
+}
 
+/* Projects Page Styling */
+#projects-page {
+    margin-top: 100px; /* Adds top margin for spacing nav bar */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#projects-page h1 {
+    color: #FFF5B5;
+    margin-bottom: 20px;
+    font-size: 3.5em;
+    text-decoration: underline; /* Underlines the heading */
+}
+
+.projectbox {
+    color: white;
+    margin: 40px;
+    transition: transform 0.3s ease; /* scaling on hover */
+}
+
+.projectbox:hover {
+    transform: scale(1.10); /* Enlarges the project box on hover */
+    border: 2px solid #FFF5B5; /* Adds border on hover */
+}
+
+.projectbox h3 {
+    color: #FFF5B5; /* Sets project title color */
+}
+
+.projectbox img {
+    height: 300px;
+    width: 300px; /* Fixed image size */
+}
+
+.download-button {
+    background-color: #FFF5B5; /* Button background color */
+    color: #323133; /* Button text color */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.download-button:hover {
+    background-color: transparent; /* Removes background on hover */
+    color: #FFF5B5; /* Changes text color on hover */
+}
+
+/* Contact Container Styling */
+#contact-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto; /* Centers the container with vertical margin */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #FFF5B5; /* Adds border */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Adds shadow */
+    box-sizing: border-box;
+}
+
+#contact-container {
+    flex-grow: 1; /* Make sure it grows to fill the remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    color: white;
+}
+
+form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input {
+    width: 100%;
+    padding: 10px; /* Adds padding inside inputs */
+    margin-bottom: 10px; /* Adds spacing between inputs */
+    border: 2px solid black; /* Sets input border */
+    font-size: 18px; /* Sets input font size */
+    color: black; /* Sets input text color */
+}
+
+form textarea {
+    width: 100%;
+    height: 200px; /* Sets textarea height */
+    padding: 10px; /* Adds padding inside textarea */
+    border: 2px solid black; /* Sets textarea border */
+    font-size: 18px; /* Sets textarea font size */
+    color: black; /* Sets textarea text color */
+}
+
+/* Footer Styling */
 #footer {
     position: relative;
     width: 100%;
-    background: black; 
-    color: white;
-    padding: 1em;
+    background: black; /* Footer background color */
+    color: white; /* Footer text color */
+    padding: 1em; /* Footer padding */
     text-align: center;
 }

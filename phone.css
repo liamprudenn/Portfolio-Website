@@ -1,0 +1,120 @@
+@media only screen and (max-width: 480px) {
+
+    /* Reset default margins for the projects section */
+    #projects-page {
+        margin-top: 0px;
+    }
+    
+    /* About Me Section: remove padding and adjust margin */
+    #about-me {
+        padding: 0px;
+        margin-top: 10px;
+    }
+
+    /* Banner Section: set full width, center text, add border */
+    #banner {
+        width: 100%;
+        text-align: center;
+        position: relative;
+        border: 3px solid #FFF5B5;
+    }
+    
+    /* Adjust font size of banner links */
+    #banner a {
+        font-size: 1rem;
+    }
+    #logo {
+        display: none; /* Hide the logo on screens up to 768px */
+    }
+
+    /* Main content adjustments: remove margins and padding */
+    main {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Home Section adjustments */
+    #index-intro {
+        margin-top: 0px; /* Remove top margin */
+        color: #FFF5B5; 
+    }
+
+    /* Reduce heading font size */
+    #index-intro h2 {
+        font-size: 26px;
+    }
+
+    /* Right column image: max width to 100% and make circular */
+    #index-right-column img {
+        max-width: 100%; 
+        border-radius: 50%; 
+    }
+
+    /* Button adjustments in home section */
+    #index-button button {
+        font-size: 18px; 
+        padding: 2px 4px; /* Adjust padding */
+        background-color: #FFF5B5; 
+    }
+
+    /* About Section margin adjustments */
+    #about-me {
+        margin-top: 20px;
+    }
+    
+    /* Padding for About Me intro section */
+    #aboutme-intro {
+        padding: 15px; 
+    }
+
+    /* Reduce font size of headings in About Me section */
+    #aboutme-intro h1 {
+        font-size: 28px; 
+        margin-bottom: 20px; 
+    }
+
+    /* Reduce paragraph font size */
+    #aboutme-intro p {
+        font-size: 16px; 
+    }
+
+    /* Center content in About Me details */
+    #aboutme-details {
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Projects Section heading adjustments */
+    #projects-page h1 {
+        font-size: 2.2rem; 
+        margin-bottom: 20px; 
+    }
+    
+    /* Project box adjustments: margin and padding */
+    .projectbox {
+        margin: 15px; 
+        padding: 10px; 
+    }
+
+    /* Contact Section: adjust width, margin, and padding */
+    #contact-container {
+        width: 95%; 
+        margin: 30px auto; 
+        padding: 15px; 
+    }
+    
+    /* Form input and textarea adjustments */
+    form input, form textarea {
+        font-size: 16px; 
+        padding: 8px;
+        margin-bottom: 15px; 
+    }
+
+    /* Footer adjustments: margin, padding, and overflow */
+    #footer {
+        margin: 0; 
+        padding: 15px; 
+        position: relative; 
+        overflow: hidden;
+    }
+}
