@@ -5,13 +5,13 @@
         margin-top: 0px;
     }
     
-    /* About Me Section: remove padding and adjust margin */
+    /* About Me Section*/
     #about-me {
         padding: 0px;
         margin-top: 10px;
     }
 
-    /* Banner Section: set full width, center text, add border */
+    /* Banner Section */
     #banner {
         width: 100%;
         text-align: center;
@@ -27,7 +27,7 @@
         display: none; /* Hide the logo on screens up to 768px */
     }
 
-    /* Main content adjustments: remove margins and padding */
+    /* Make sure no adjustments are inherited*/
     main {
         margin: 0;
         padding: 0;
@@ -44,7 +44,7 @@
         font-size: 26px;
     }
 
-    /* Right column image: max width to 100% and make circular */
+    /* Right column image */
     #index-right-column img {
         max-width: 100%; 
         border-radius: 50%; 
@@ -90,13 +90,13 @@
         margin-bottom: 20px; 
     }
     
-    /* Project box adjustments: margin and padding */
+    /* Project box adjustments */
     .projectbox {
         margin: 15px; 
         padding: 10px; 
     }
 
-    /* Contact Section: adjust width, margin, and padding */
+    /* Contact Section:  */
     #contact-container {
         width: 95%; 
         margin: 30px auto; 
@@ -110,7 +110,7 @@
         margin-bottom: 15px; 
     }
 
-    /* Footer adjustments: margin, padding, and overflow */
+    /* Footer adjustments */
     #footer {
         margin: 0; 
         padding: 15px; 

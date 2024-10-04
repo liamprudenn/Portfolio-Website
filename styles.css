@@ -19,7 +19,7 @@ a {
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensures the body takes at least the full viewport height */
+    min-height: 100vh; 
     font-family: 'Playfair Display', serif; /* Sets the default font */
 }
 
@@ -30,7 +30,7 @@ body {
 /* Navigation Bar */
 #banner {
     width: 100%;
-    position: fixed; /* Keeps the navbar fixed at the top */
+    position: relative; /* Keeps the navbar fixed at the top */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,7 +56,7 @@ body {
 }
 
 #banner li:hover {
-    text-decoration: underline; /* Underlines link on hover */
+    text-decoration: underline; 
     color: #FFF5B5; /* Changes link color on hover */
 }
 
@@ -124,7 +124,7 @@ main {
 
 #index-button button:hover {
     background: conic-gradient(from 0deg, #333333, #FFF5B5, #333333); /* Darker angular gradient on hover */
-    color: #FFF5B5; /* Changes text color on hover */
+    color: #FFF5B5; 
 }
 
 
@@ -133,30 +133,30 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 120px; /* Adds top padding for spacing */
+    padding-top: 120px;
     color: white;
     text-align: center;
 }
 
 #aboutme-intro {
     width: 100%;
-    max-width: 68%; /* Limits width for better readability */
+    max-width: 68%; 
     padding: 20px;
     margin-bottom: 40px; /* Adds bottom margin */
 }
 
 #aboutme-intro h1 {
     margin-bottom: 35px;
-    color: #FFF5B5; /* Sets heading color */
+    color: #FFF5B5;
     font-size: 35px;
 }
 
 #aboutme-intro p {
-    font-size: 18px; /* Sets paragraph font size */
+    font-size: 18px; 
 }
 
 #profile-photo {
-    width: 30%; /* Sets profile photo width */
+    width: 30%;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6); /* Adds shadow to the photo */
 }
 
@@ -170,8 +170,8 @@ main {
 }
 
 #aboutme-details h2 {
-    margin: 20px 0; /* Adds vertical spacing */
-    color: #FFF5B5; /* Sets subheading color */
+    margin: 20px 0; 
+    color: #FFF5B5; 
 }
 
 #aboutme-details p {
@@ -184,9 +184,9 @@ main {
 
 #aboutme-video {
     width: 100%;
-    max-width: 800px; /* Limits video width */
-    border: 5px solid #FFF5B5; /* Adds border around the video */
-    box-shadow: 0px 5px 11px rgba(0, 0, 0, 1.45); /* Adds shadow to the video container */
+    max-width: 800px; 
+    border: 5px solid #FFF5B5; 
+    box-shadow: 0px 5px 11px rgba(0, 0, 0, 1.45); 
 }
 
 /* Projects Page Styling */
@@ -217,17 +217,17 @@ main {
 }
 
 .projectbox h3 {
-    color: #FFF5B5; /* Sets project title color */
+    color: #FFF5B5; 
 }
 
 .projectbox img {
     height: 300px;
-    width: 300px; /* Fixed image size */
+    width: 300px; 
 }
 
 .download-button {
-    background-color: #FFF5B5; /* Button background color */
-    color: #323133; /* Button text color */
+    background-color: #FFF5B5; 
+    color: #323133; 
     border: none;
     padding: 10px 20px;
     cursor: pointer; /* Pointer cursor on hover */
@@ -235,7 +235,7 @@ main {
 
 .download-button:hover {
     background-color: transparent; /* Removes background on hover */
-    color: #FFF5B5; /* Changes text color on hover */
+    color: #FFF5B5; 
 }
 
 /* Contact Container Styling */
@@ -243,11 +243,11 @@ main {
     width: 50%;
     display: flex;
     flex-direction: column;
-    margin: 100px auto; /* Centers the container with vertical margin */
+    margin: 100px auto; 
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: 2px solid #FFF5B5; /* Adds border */
+    border: 2px solid #FFF5B5; 
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Adds shadow */
     box-sizing: border-box;
 }
@@ -256,8 +256,8 @@ main {
     flex-grow: 1; /* Make sure it grows to fill the remaining space */
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
+    justify-content: center; 
+    align-items: center; 
     color: white;
 }
 
@@ -270,11 +270,11 @@ form {
 
 form input {
     width: 100%;
-    padding: 10px; /* Adds padding inside inputs */
+    padding: 10px; 
     margin-bottom: 10px; /* Adds spacing between inputs */
-    border: 2px solid black; /* Sets input border */
-    font-size: 18px; /* Sets input font size */
-    color: black; /* Sets input text color */
+    border: 2px solid black; 
+    font-size: 18px; 
+    color: black; 
 }
 
 form textarea {
@@ -282,16 +282,16 @@ form textarea {
     height: 200px; /* Sets textarea height */
     padding: 10px; /* Adds padding inside textarea */
     border: 2px solid black; /* Sets textarea border */
-    font-size: 18px; /* Sets textarea font size */
-    color: black; /* Sets textarea text color */
+    font-size: 18px;
+    color: black; 
 }
 
 /* Footer Styling */
 #footer {
     position: relative;
     width: 100%;
-    background: black; /* Footer background color */
-    color: white; /* Footer text color */
-    padding: 1em; /* Footer padding */
+    background: black;
+    color: white;
+    padding: 1em; 
     text-align: center;
 }

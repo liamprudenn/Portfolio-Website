@@ -1,18 +1,18 @@
-/* Media query for screens with a maximum width of 768px */
+/* Media query for screens that are 768px wide or smaller */
 @media only screen and (max-width: 768px) {
 
-    /* Remove top margin for the projects page */
+    /* Remove any top margin from the projects section to save space */
     #projects-page {
         margin-top: 0;
     }
 
-    /* Adjust padding and margin for about me section */
+    /* Reduce padding and add a little space on top of the "About Me" section */
     #about-me {
         padding: 0;
         margin-top: 10px;
     }
 
-    /* Make the banner full width, center its content, and add border */
+    /* Make the navbar span the full width, center its content, and add a border */
     #banner {
         width: 100%;
         text-align: center;
@@ -20,96 +20,94 @@
         border: 3px solid #FFF5B5;
     }
 
-    /* Reduce font size for banner links */
+    /* Make the navbar links slightly smaller for a compact view */
     #banner a {
         font-size: 1.2rem;
     }
 
-    /* Remove bottom margin for multiple sections */
+    /* Remove bottom margin for these sections to tighten up spacing */
     #index-intro, #aboutme-intro, #projects-page, #contact-container {
         margin-bottom: 0;
     }
 
-    /* Remove margin and padding for main content */
+    /* Remove any margins and padding from the main content area */
     main {
         margin: 0;
         padding: 0;
     }
 
-    /* Remove top margin and set text color for intro section */
+    /* Remove top margin and set a lighter color for the intro text */
     #index-intro {
         margin-top: 0;
         color: #FFF5B5;
         justify-content: center;
     }
 
-    /* Adjust font size for main heading */
+    /* Make the main heading smaller to fit better on small screens */
     #index-intro h2 {
         font-size: 62px;
     }
 
-    /* Set maximum width and circular shape for images */
+    /* Make images more responsive: set max width and make them circular */
     #index-right-column img {
         max-width: 90%;
         border-radius: 50%;
     }
 
-    /* Adjust button size and background color */
+    /* Make the button text and size larger and update the background color */
     #index-button button {
         font-size: 20px;
         padding: 5px 10px;
         background-color: #FFF5B5;
     }
 
-    /* Increase top margin for about me section */
+    /* Add more top space above the "About Me" section */
     #about-me {
         margin-top: 30px;
     }
 
-    /* Adjust padding for intro section of about me */
+    /* Add padding to the "About Me" intro for better spacing */
     #aboutme-intro {
         padding: 20px;
     }
 
-    /* Set font size for headings and margins */
+    /* Adjust the font size of headings and add space below them */
     #aboutme-intro h1 {
         font-size: 30px;
         margin-bottom: 20px;
     }
 
-    /* Adjust paragraph font size */
+    /* Make the text in the "About Me" section a bit larger */
     #aboutme-intro p {
         font-size: 18px;
     }
 
-    /* Center content in details section */
+    /* Center the content in the "About Me" details section */
     #aboutme-details {
         justify-content: center;
         align-items: center;
     }
 
-    /* Set font size and margin for project page headings */
+    /* Set a larger font size for the project page title and add some space below */
     #projects-page h1 {
         font-size: 2.5rem;
         margin-bottom: 20px;
     }
 
-    /* Adjust margins and padding for project boxes */
+    /* Add margins and padding around each project box for better spacing */
     .projectbox {
         margin: 20px;
         padding: 15px;
     }
 
-    /* Set width, margins, and padding for contact container */
-
-    /* Adjust font size, padding, and margins for form inputs */
+    /* Adjust the size, spacing, and padding for form elements */
     form input, form textarea {
         font-size: 18px;
         padding: 10px;
         margin-bottom: 20px;
     }
 
-    /* Set margin, padding, and positioning for footer */
+    /* Make sure the footer is spaced properly, has some padding, and doesn't overflow */
     #footer {
         margin: 0;
         padding: 20px;
